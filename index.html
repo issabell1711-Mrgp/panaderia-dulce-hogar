@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Panadería Dulce Hogar</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        
+        <h1>Bienvenidos a Panadería Dulce Hogar</h1>
+        
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <button id="boton-tema">Modo oscuro</button>
+
+    </header>
+
+    <section id="inicio">
+
+        <p>El mejor pan recién horneado, hecho con amor para ti.</p>
+
+    </section>
+
+<section id="productos">
+
+    <h2>Nuestros productos</h2>
+
+    <article>
+        <img src="img/croissant.jpg" alt="Croissant recién horneado">
+        <h3>Croissant</h3>
+        <p>Delicioso pan de hojaldre recién horneado.</p>
+        <p>Precio: <span class="precio">$5.000</span></p>
+
+        <button
+       class="btn-agregar"
+       data-id="1"
+       data-nombre="Croissant"
+       data-precio="5000">
+       Agregar al carrito
+       </button>
+
+    </article>
+
+<article>
+    <img src="img/pan artesanal.jpg" alt="Pan artesanal recién horneado">
+    <h3>Pan artesanal</h3>
+    <p>Pan tradicional recién horneado, suave y delicioso.</p>
+    <p>Precio: <span class="precio">$8.000</span></p>
+
+    <button
+    class="btn-agregar"
+    data-id="2"
+    data-nombre="Pan artesanal"
+    data-precio="8000">
+    Agregar al carrito
+    </button>
+
+</article>
+
+<article>    
+    <img src="img/torta de chocolate.jpg" alt="Porción de torta de chocolate">
+    <h3>Torta de chocolate</h3>
+    <p>Deliciosa porción de torta de chocolate, suave y esponjosa.</p>
+    <p>Precio: <span class="precio">$9.000</span></p>
+
+    <button
+    class="btn-agregar"
+    data-id="3"
+    data-nombre="Torta de chocolate"
+    data-precio="9000">
+    Agregar al carrito
+    </button>
+
+</article>
+
+<article>    
+    <img src="img/cafe colombiano.jpg" alt="Taza de café colombiano recién preparado">
+    <h3>Café colombiano</h3>
+    <p>Café recién preparado, ideal para acompañar nuestros panes.</p>
+    <p>Precio: <span class="precio">$4.500</span></p>
+
+     <button
+    class="btn-agregar"
+    data-id="4"
+    data-nombre="Café colombiano"
+    data-precio="4500">
+    Agregar al carrito
+    </button>
+
+</article>
+
+</section>
+
+<section id="carrito">
+
+    <h2>Carrito de compras</h2>
+
+    <div id="lista-carrito">
+        <p>Tu carrito está vacío.</p>
+    </div>
+
+    <p>Total: $<span id="total-carrito">0</span></p>
+
+    <button id="vaciar-carrito">Vaciar carrito</button>
+
+</section>
+
+<section id="nosotros">
+
+    <h2>Sobre nosotros</h2>
+
+    <p>
+        Somos una panadería familiar que busca llevar
+        felicidad a cada hogar mediante productos frescos
+        y de excelente calidad.
+    </p>
+
+    <h3>Horarios de atención</h3>
+
+    <p>Lunes a sábado: 6:00 a. m. - 8:00 p. m.</p>
+
+    <p>Domingos: 7:00 a. m. - 2:00 p. m.</p>
+
+</section>
+
+<section id="contacto">
+
+    <h2>Contáctanos</h2>
+
+    <p>¡Nos encantaría atenderte!</p>
+
+    <p>Dirección: Bogotá, Colombia</p>
+
+    <p>Teléfono: 310 417 0319</p>
+
+    <a href="https://wa.me/573104170319" target="_blank" rel="noopener noreferrer">
+        Escríbenos por WhatsApp
+    </a>
+    
+<h3>Envíanos un mensaje</h3>
+
+<p>Completa el siguiente formulario y nos pondremos en contacto contigo.</p>
+
+
+<form id="formulario-contacto">
+
+    <label for="nombre">Nombre:</label>
+
+    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+    
+<label for="correo">Correo electrónico:</label>
+
+<input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+
+<label for="mensaje">Mensaje:</label>
+
+<textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje"></textarea>
+
+<button type="submit">Enviar mensaje</button>
+
+</form>
+
+
+</section>
+
+<footer>
+
+    <p>Panadería Dulce Hogar</p>
+
+    <p>Proyecto universitario de desarrollo web</p>
+
+    <p>&copy; 2026 - Todos los derechos reservados.</p>
+
+</footer>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

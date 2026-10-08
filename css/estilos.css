@@ -1,0 +1,231 @@
+body {
+    background-color: #fff8ee;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #58351f;
+    padding: 20px;    
+    font-family: Arial, sans-serif;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+nav {
+    text-align: center;
+}
+
+#inicio {
+    text-align: center;
+    padding: 40px;
+}
+
+#productos {
+    text-align: center;
+    padding: 30px;
+}
+
+
+#productos article {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 40%;
+}
+
+#nosotros {
+    background-color: #f7e8d4;
+    text-align: center;
+    padding: 40px;
+}
+
+#contacto {
+    text-align: center;
+    padding: 40px;
+}
+
+#contacto a {
+    display: inline-block;
+    background-color: #128c4a;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+footer {
+    background-color: #58351f;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+#contacto a:hover {
+    background-color: #075e34;
+}
+
+nav a:hover {
+    color: #ffcc80;
+}
+
+.precio {
+    color: #a64b21;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+#productos article {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 40%;
+    transition: transform 0.3s ease;
+}
+
+
+nav {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#productos article:hover {
+    transform: translateY(-5px);
+}
+
+#productos article h3 {
+    color: #58351f;
+    font-size: 22px;
+}
+
+#productos article img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+
+    #inicio,
+    #productos,
+    #nosotros,
+    #contacto {
+        padding: 20px;
+    }
+    
+#productos article {
+    display: block;
+    width: 100%;
+}
+
+}
+
+#formulario-contacto {
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+#formulario-contacto input,
+#formulario-contacto textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #c9b8a7;
+    border-radius: 8px;
+}
+
+#formulario-contacto label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#formulario-contacto button {
+    background-color: #a64b21;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+body.modo-oscuro {
+    background-color: #1f1f1f;
+    color: white;
+}
+
+body.modo-oscuro #productos article {
+    background-color: #333333;
+    color: white;
+}
+
+body.modo-oscuro #nosotros {
+    background-color: #2b2b2b;
+}
+
+body.modo-oscuro #contacto {
+    background-color: #1f1f1f;
+}
+
+body.modo-oscuro footer {
+    background-color: #111111;
+}
+#carrito {
+    background-color: white;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+#vaciar-carrito {
+    background-color: #a64b21;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: none;
+}
+#lista-carrito div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7e8d4;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+#lista-carrito button {
+    background-color: #b42318;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
