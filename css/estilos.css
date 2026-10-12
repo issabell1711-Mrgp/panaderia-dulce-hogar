@@ -229,3 +229,39 @@ body.modo-oscuro footer {
     border-radius: 6px;
     cursor: pointer;
 }
+#registro {
+    background-color: #f7e8d4;
+    padding: 40px;
+    text-align: center;
+}
+
+#formulario-registro {
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+#formulario-registro label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+#formulario-registro input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #c9b8a7;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+#formulario-registro button {
+    background-color: #a64b21;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}

@@ -72,3 +72,34 @@ botonVaciar.addEventListener("click", function() {
     botonVaciar.style.display = "none";
 
 });
+const formularioRegistro = document.getElementById("formulario-registro");
+
+formularioRegistro.addEventListener("submit", function(evento) {
+
+    evento.preventDefault();
+
+    const nombreRegistro = document.getElementById("nombre-registro").value.trim();
+    const correoRegistro = document.getElementById("correo-registro").value.trim();
+    const telefonoRegistro = document.getElementById("telefono-registro").value.trim();
+    const contrasenaRegistro = document.getElementById("contrasena-registro").value;
+    const confirmarContrasena = document.getElementById("confirmar-contrasena").value;
+
+    if (contrasenaRegistro !== confirmarContrasena) {
+    alert("Las contraseñas no coinciden.");
+    return;
+}
+const cliente = {
+    nombre: nombreRegistro,
+    correo: correoRegistro,
+    telefono: telefonoRegistro
+};
+
+localStorage.setItem("clienteRegistrado", JSON.stringify(cliente));
+
+alert("Cliente registrado correctamente.");
+
+formularioRegistro.reset();
+
+    console.log("Registro:", nombreRegistro, correoRegistro, telefonoRegistro);
+
+});
